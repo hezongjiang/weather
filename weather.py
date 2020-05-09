@@ -10,7 +10,7 @@ def get_weather():
 
     url = 'https://free-api.heweather.net/s6/weather/forecast?location=深圳&key=your_key'
     res = requests.get(url).json()
-    print(res)
+    # print(res)
     result = res['HeWeather6'][0]['daily_forecast']
     
     # 今天的天气
